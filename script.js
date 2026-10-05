@@ -80,6 +80,7 @@
     copy.classList.add('is-changing');
     window.setTimeout(() => {
       count.innerHTML = `${String(index + 1).padStart(2, '0')} <span>/ 04</span>`;
+      copy.classList.toggle('is-scent', index === 3);
       kicker.textContent = chapter.kicker;
       title.innerHTML = chapter.title;
       body.textContent = chapter.body;

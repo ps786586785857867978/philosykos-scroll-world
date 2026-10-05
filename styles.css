@@ -63,6 +63,7 @@ button { cursor: pointer; }
 .chapter-count span { color: rgba(238,233,220,.48); }
 .chapter-kicker { margin: 0 0 14px; color: var(--moss); font-size: 9px; letter-spacing: .2em; text-transform: uppercase; }
 .chapter-copy h2 { margin: 0; font: 400 clamp(42px, 5.4vw, 78px)/.93 var(--serif); letter-spacing: -.04em; }
+.chapter-copy.is-scent h2 { font-size: clamp(39px, 4.2vw, 61px); }
 .chapter-body { max-width: 295px; margin: 20px 0 0; color: rgba(255,255,255,.82); font-size: 12px; line-height: 1.8; }
 .film-footer { bottom: 4%; color: rgba(255,255,255,.77); }
 .film-note, .film-credit { font-size: 8px; letter-spacing: .19em; }
