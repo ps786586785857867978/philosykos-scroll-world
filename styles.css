@@ -75,9 +75,6 @@ button { cursor: pointer; }
 .chapter-dot.is-active { color: var(--moss); border-color: rgba(170,177,125,.62); }
 .chapter-dot:focus-visible, a:focus-visible, .motion-play:focus-visible { outline: 2px solid var(--moss); outline-offset: 4px; }
 .nav-stem { width: 1px; height: clamp(30px, 5vh, 56px); background: var(--line); }
-.chapter-steps { position: absolute; inset: 0 auto auto 0; width: 1px; height: 100%; pointer-events: none; }
-.chapter-step { height: 100svh; }
-
 .notes { padding: 150px 12vw 155px; display: grid; grid-template-columns: 1fr .9fr; gap: 9vw; align-items: start; background: #e9e3d5; color: #272a21; }
 .notes .eyebrow { color: #69704d; }
 .notes h2 { margin: 0; font: 400 clamp(48px, 6.2vw, 90px)/.94 var(--serif); letter-spacing: -.045em; }
