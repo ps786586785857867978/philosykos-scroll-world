@@ -35,7 +35,7 @@ The brief records five references: the required Scroll World skill plus four oth
 
 ## Publish
 
-Repository: not created yet.  
-Live site: not published yet.
+Repository: <https://github.com/ps786586785857867978/philosykos-scroll-world><br>
+Live site: <https://ps786586785857867978.github.io/philosykos-scroll-world/>
 
-The local Git repository and GitHub Pages deployment workflow are ready. To publish, add a dedicated GitHub repository as the `origin` remote and push `main`; the workflow will deploy the static site to GitHub Pages. The current GitHub CLI login is invalid, so repository creation and publishing could not be completed from this workspace.
+The GitHub Actions workflow in `.github/workflows/pages.yml` deploys the site on each push to `main`. On first publish, set the repository’s Pages build source to **GitHub Actions** if GitHub has not enabled it automatically. The live URL may take a few minutes to become available after the first deployment.
