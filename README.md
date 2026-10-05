@@ -34,7 +34,7 @@ The brief records five references: the required Scroll World skill plus four oth
 
 ## Publish
 
-Repository: _add the dedicated GitHub repository URL after creating it._  
-Live site: _add the deployment URL after publishing._
+Repository: not created yet.  
+Live site: not published yet.
 
-The repository is initialized locally. Publishing requires a GitHub repository and hosting destination.
+The local Git repository and GitHub Pages deployment workflow are ready. To publish, add a dedicated GitHub repository as the `origin` remote and push `main`; the workflow will deploy the static site to GitHub Pages. The current GitHub CLI login is invalid, so repository creation and publishing could not be completed from this workspace.
