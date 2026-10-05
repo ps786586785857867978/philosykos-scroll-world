@@ -58,7 +58,9 @@ Reviewed 5 October 2026. These references informed pacing, scene continuity and 
 
 ## Generation and transition note
 
-The Magnific video was treated as a finished user-authored export. The web implementation does not regenerate or alter its frames. The project’s scene boundaries are marked in the page timeline and synchronized with scroll. For a next media revision, inspect the final frame of each segment against the next segment’s first frame before assembly; prompt text alone cannot guarantee a pixel-identical join.
+The Magnific video was treated as a finished user-authored export. The transition was iterated in Magnific: early attempts barely changed the scene or mismatched at the join; later attempts were adjusted for the descending camera, coconut rolling down the trunk and bottle reveal. The user approved the final stitched editor export for this site. The web implementation does not regenerate or alter its frames. The four page chapter positions are mapped onto the delivered timeline.
+
+Browser review confirmed that the export decodes and that forward/backward scrolling changes the video time and chapter copy. Representative frames showed grove, valley, trunk and bottle beats; every frame at each clip join was not inspected, so a no-pop seam check remains incomplete. For a later media revision, compare each clip’s last frame with the next clip’s first frame before assembly; prompt text alone cannot guarantee a pixel-identical join.
 
 
 ## Magnific MCP notes

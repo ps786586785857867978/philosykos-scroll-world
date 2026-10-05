@@ -23,6 +23,7 @@ The concept, audience, visual direction, technical plan, chapter map and referen
 - A poster remains behind the video during loading. The story keeps its chapter copy and still artwork if video playback is unavailable.
 - With reduced motion enabled, the story uses four stills instead of scroll-scrubbing video. A visitor can choose to play the film.
 - Chapter labels sit in HTML, outside the video.
+- The exported MP4 was checked in Chrome: it decodes at 1920 × 1080 and scrubs forward and backward. Frame-by-frame continuity at every join still needs a final visual pass.
 
 ## Media
 
