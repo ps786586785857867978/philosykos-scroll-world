@@ -176,8 +176,9 @@
       const chapter = chapters[Number(dot.dataset.chapter)];
       const top = story.getBoundingClientRect().top + window.scrollY;
       const scrollable = Math.max(1, story.offsetHeight - window.innerHeight);
+      const targetProgress = chapter.at === 0 ? 0 : Math.min(1, chapter.at + 0.01);
       window.scrollTo({
-        top: top + scrollable * chapter.at,
+        top: top + scrollable * targetProgress,
         behavior: reduceMotion.matches ? 'auto' : 'smooth',
       });
     });
