@@ -18,7 +18,7 @@ The concept, audience, visual direction, technical plan, chapter map and referen
 
 ## Scroll experience
 
-- One 1920 × 1080 Magnific export (`public/media/philosykos-journey.mp4`) holds the continuous video journey.
+- One 1920 × 1080, 30 fps Magnific export (`public/media/philosykos-journey.mp4`, 19.48 seconds) holds the continuous video journey.
 - Scroll progress maps to video time. The same mapping works in reverse when scrolling upward.
 - A poster remains behind the video during loading. The story keeps its chapter copy and still artwork if video playback is unavailable.
 - With reduced motion enabled, the story uses four stills instead of scroll-scrubbing video. A visitor can choose to play the film.
@@ -30,7 +30,7 @@ The MP4 is the user-provided Magnific export `pikaso-untitled-project-2026-10-05
 
 ## Research
 
-The brief records five references: the required Scroll World skill plus four other interactive or scroll-led experiences. The site also uses Diptyque’s official Philosykos Eau de Parfum description for the product language and scent cues.
+The brief records five references: the required Scroll World skill plus four other interactive or scroll-led experiences. It also summarizes the connected Magnific MCP model catalog and its frame/resolution options. The site uses Diptyque’s official Philosykos Eau de Parfum description for the product language and scent cues.
 
 ## Publish
 

@@ -31,7 +31,7 @@ The word “coconut” is not presented as an official Eau de Parfum note. Dipty
 - **Stack:** Static HTML, CSS and vanilla JavaScript; no framework or build step.
 - **Playback:** A single local MP4 is paused and sought to `duration × scrollProgress`. `requestAnimationFrame` coalesces scroll updates; chapter copy and progress follow the same normalized position. The browser’s native video seek handles backward movement.
 - **Media loading:** Local MP4, `preload="auto"`, a compressed still poster behind the video, and a chapter image sequence for still-only contexts. Keep a poster visible until the video has decoded a frame; handle media errors by retaining the still page.
-- **Connected-scene workflow:** The final export is used as delivered. Its Magnific editor project metadata reports 1920 × 1080 and 19.39 seconds; verify the actual MP4 stream with `ffprobe` before final deployment.
+- **Connected-scene workflow:** The supplied final export is used as delivered. Browser media inspection confirms a 1920 × 1080 H.264 video stream, 30 fps and a 19.48-second duration. The film decodes in Chrome, and manual forward/backward scroll checks confirmed timeline seeking. Frame-by-frame join inspection remains a separate visual-quality check.
 - **Target resolution:** 1920 × 1080 landscape master, shown with `object-fit: cover` in a responsive 16:9 stage. On phones, the same landscape film is art-directed inside a taller viewport; chapter copy moves low on the frame.
 - **Reduced motion:** Show still illustrations for the chapter beats, do not seek video while scrolling, and offer a clearly labeled, user-initiated play button.
 - **Accessibility:** Semantic sections, visible keyboard focus, skip link, descriptive video label, chapter buttons with accessible names, and no scroll hijacking.
@@ -59,3 +59,13 @@ Reviewed 5 October 2026. These references informed pacing, scene continuity and 
 ## Generation and transition note
 
 The Magnific video was treated as a finished user-authored export. The web implementation does not regenerate or alter its frames. The project’s scene boundaries are marked in the page timeline and synchronized with scroll. For a next media revision, inspect the final frame of each segment against the next segment’s first frame before assembly; prompt text alone cannot guarantee a pixel-identical join.
+
+
+## Magnific MCP notes
+
+The connected Magnific MCP catalog was inspected on 5 October 2026 using `video_models_list`; this is a snapshot of the account-visible catalog, which may change. The final video is user-authored and kept unchanged.
+
+- **Seedance 2.5** (`bytedance-seedance-pro-2.5`) supports 16:9, 1080p, 4–30 seconds, image start and end keyframes, image/video references, and prompt/camera-motion controls. The catalog labels it the top overall video recommendation. Image keyframes cannot be combined with its reference pool in the same request.
+- **MiniMax H3 Max** (`minimax-video-3_0-max`) supports 480p/768p, 5–15 seconds, start/end keyframes, and up to 9 image references. Use it for draft staging; its listed output is below the 1080p project target.
+- **Wan 3.0** (`wan-3-0`) lists 480p/720p/1080p, 2–30 seconds and start/end keyframes, but the current catalog marks it private/beta. Access may depend on account availability.
+- The generation tool accepts model slugs, duration, aspect ratio, resolution, prompt, camera motion, references, and optional keyframes. The MCP session supplies account access; no credentials are stored in this repository. Generation responses expose credit usage, but exact per-model cost and this account’s balance were not recorded here. The student-facing brief warns that credits are shared, so no further generation was run during this audit.
